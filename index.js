@@ -18,6 +18,9 @@ function buscarTarefas() {
 buscarTarefas();
 
 function inserirTarefas(listaDeTarefas) {
+  const lista = document.getElementById("lista");
+  const contador = document.getElementById("contadorTarefas")
+
   if (listaDeTarefas.length > 0) {
     lista.innerHTML = "";
     listaDeTarefas.map((tarefa) => {
@@ -30,6 +33,10 @@ function inserirTarefas(listaDeTarefas) {
                 </div>
           </li>`;
     });
+    contador.textContent = `Total de Tarefas: ${listaDeTarefas.length}`;
+  } else {
+    lista.innerHTML = "";
+    contador.textContent = "Total de Tarefas: 0";
   }
 }
 

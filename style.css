@@ -6,12 +6,13 @@
     list-style: none;
     text-decoration: none;
     outline: none;
-    font-family:'Times New Roman', Times, serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 header {
     background-color: rgb(8, 50, 236);
     padding: 16px 120px;
+    border-radius: 10%;
 }
 
 header input{
@@ -40,9 +41,14 @@ main {
     align-items: center;
 }
 
-#tarefas h2 {
-    font-size: 26px;
-    font-weight: 100;
+#tarefas h1 {
+    font-size: 28px;
+    font-weight: 150px;
+}
+
+#contadorTarefas {
+    font-size: 16px;
+    color: rgba(18, 45, 194, 0.829);
 }
 
 #tarefas ul {
@@ -98,11 +104,6 @@ main {
 
 #tarefas button:hover {
     background-color: rgb(8, 50, 143);
-}
-
-#tarefas h5 {
-    font-size: 26px;
-    color: rgba(113, 159, 170, 0.829);
 }
 
 #overlay {
